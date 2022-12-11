@@ -1,9 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import { Button } from '@mui/material'
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <h1>e isso</h1>
+    <div>
+      <Button variant='contained'>Teste</Button>
+    </div>
   )
 }
