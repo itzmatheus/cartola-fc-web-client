@@ -1,4 +1,4 @@
-import { AppBar, Box, Button, ButtonProps, Toolbar } from "@mui/material";
+import { AppBar, Avatar, Box, Button, ButtonProps, Chip, Toolbar } from "@mui/material";
 import Image from "next/image";
 import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/router";
@@ -48,6 +48,11 @@ export const Navbar = () => {
                         <NavbarItem showUnderline={router.pathname === '/players'} href='/players'>Escalação</NavbarItem>
                         <NavbarItem showUnderline={['/matches', '/matches/[id]'].includes(router.pathname)} href='/matches'>Jogos</NavbarItem>
                     </Box>
+                    <Chip
+                        label={300}
+                        avatar={<Avatar>R$</Avatar>}
+                        color='secondary'
+                    />
                 </Toolbar>
             </AppBar>
         </Box>
