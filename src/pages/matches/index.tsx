@@ -1,9 +1,10 @@
 import { Button } from '@mui/material'
+import { Page } from '../../components/Page'
 
 export default function ListMatchesPage() {
   return (
-    <div>
+    <Page>
       <Button variant='contained'>List Matches Page</Button>
-    </div>
+    </Page>
   )
 }

@@ -1,9 +1,10 @@
 import { Button } from '@mui/material'
+import { Page } from '../components/Page'
 
 export default function HomePage() {
   return (
-    <div>
+    <Page>
       <Button variant='contained'>Teste</Button>
-    </div>
+    </Page>
   )
 }
