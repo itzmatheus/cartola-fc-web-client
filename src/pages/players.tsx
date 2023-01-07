@@ -128,7 +128,7 @@ export default function ListPlayersPage() {
             <TeamLogo sx={{ 
               position: 'absolute',
               flexDirection: 'row',
-              ml: (theme) => theme.spacing(-2.5),
+              ml: (theme) => theme.spacing(-1.5),
               mt: (theme) => theme.spacing(-3.5),
               gap: (theme) => theme.spacing(1)
             }} />
@@ -138,7 +138,7 @@ export default function ListPlayersPage() {
               gap: (theme) => theme.spacing(2)
             }}>
               <Label>Você ainda tem</Label>
-              <Label>C$ 300</Label>
+              <Label>C$ {budgetRemaining}</Label>
             </Box>
           </Section>
         </Grid>
